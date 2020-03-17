@@ -6,7 +6,7 @@ an approach to unsupervised clustering using generative adversarial networks.
 
 ## Requirements
 
-The package as well as the necessary requirements can be installed by running `make` or via
+The package as well as the necessary requirements can be installed by running `make -f Makefile` or via
 ```
 virtualenv -p /usr/local/bin/python3 venv
 source venv/bin/activate
