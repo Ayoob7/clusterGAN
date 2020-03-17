@@ -36,7 +36,7 @@ Below is an example set of training curves for 200 epochs, batch size of 64 on t
 ## Generated Examples
 To generate examples from randomly sampled latent space variables, 
 ```
-python gen-examples -r test_run -s mnist -b 100
+python gen-examples.py -r test_run -s mnist -b 100
 ```
 
 Here are some example generated images by specified class (each row) of the learned labels in latent space.
