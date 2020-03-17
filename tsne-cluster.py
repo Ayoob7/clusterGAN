@@ -43,6 +43,7 @@ def main():
     parser.add_argument("-r", "--run_dir", dest="run_dir", help="Training run directory")
     parser.add_argument("-p", "--perplexity", dest="perplexity", default=-1, type=int,  help="TSNE perplexity")
     parser.add_argument("-n", "--n_samples", dest="n_samples", default=100, type=int,  help="Number of samples")
+    parser.add_argument("-s", "--dataset_name", dest="dataset_name", default='mnist', choices=dataset_list,  help="Dataset name")
     args = parser.parse_args()
 
     # TSNE setup
@@ -52,7 +53,7 @@ def main():
     # Directory structure for this run
     run_dir = args.run_dir.rstrip("/")
     run_name = run_dir.split(os.sep)[-1]
-    dataset_name = run_dir.split(os.sep)[-2]
+    dataset_name = args.dataset_name
     
     run_dir = os.path.join(RUNS_DIR, dataset_name, run_name)
     data_dir = os.path.join(DATASETS_DIR, dataset_name)
