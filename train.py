@@ -78,7 +78,8 @@ def main():
     
     # Make directory structure for this run
     sep_und = '_'
-    run_name_comps = ['%iepoch'%n_epochs, 'z%s'%str(latent_dim), mtype, 'bs%i'%batch_size, run_name]
+    #run_name_comps = ['%iepoch'%n_epochs, 'z%s'%str(latent_dim), mtype, 'bs%i'%batch_size, run_name]
+    run_name_comps = [run_name]
     run_name = sep_und.join(run_name_comps)
 
     run_dir = os.path.join(RUNS_DIR, dataset_name, run_name)
