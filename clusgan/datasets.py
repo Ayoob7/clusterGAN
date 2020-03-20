@@ -16,7 +16,8 @@ except ImportError as e:
 
 
 DATASET_FN_DICT = {'mnist' : datasets.MNIST,
-                   'fashion-mnist' : datasets.FashionMNIST
+                   'fashion-mnist' : datasets.FashionMNIST,
+                   'CIFAR10' : datasets.CIFAR10
                   }
 
 
